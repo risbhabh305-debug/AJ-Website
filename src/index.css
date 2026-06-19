@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom global styles can be placed here. The font families are loaded via Google Fonts in index.html or a CDN. */
+
+body {
+  /* ensures smooth font rendering on devices */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
