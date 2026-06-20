@@ -15,6 +15,8 @@ export default {
       fontFamily: {
         heading: ['Merriweather', 'serif'],
         body: ['Open Sans', 'sans-serif'],
+        'hero-display': ['Cormorant Garamond', 'serif'],
+        'hero-body': ['Montserrat', 'sans-serif'],
       },
       animation: {
         shimmer: 'shimmer 6s ease-in-out infinite',

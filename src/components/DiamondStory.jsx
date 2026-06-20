@@ -22,7 +22,7 @@ const DiamondStory = () => {
   }, []);
 
   return (
-    <section className="relative overflow-hidden bg-[#090909] px-5 py-20 text-offwhite sm:px-8 lg:px-12 lg:py-28">
+    <section className="relative overflow-hidden bg-[#090909] px-5 pb-5 pt-20 text-offwhite sm:px-8 sm:pb-6 lg:px-12 lg:pb-8 lg:pt-28">
       <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_24%_52%,rgba(200,169,106,0.13),transparent_27%),radial-gradient(circle_at_84%_20%,rgba(255,255,255,0.035),transparent_22%)]" />
 
       <div className="relative mx-auto grid max-w-6xl items-center gap-12 lg:grid-cols-[minmax(0,0.84fr)_minmax(0,1fr)] lg:gap-24">

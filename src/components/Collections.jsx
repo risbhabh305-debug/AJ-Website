@@ -6,7 +6,7 @@ import ringsImg from '../assets/design5.jpg';
 import earringsImg from '../assets/design11.jpg';
 import pendantsImg from '../assets/design6.jpg';
 import necklacesImg from '../assets/design2.jpg';
-import banglesImg from '../assets/design9.jpg';
+import banglesVideo from '../assets/bangles.mp4';
 import bridalImg from '../assets/design10.jpg';
 
 // Collection data: titles and local images sourced from assets.
@@ -29,7 +29,7 @@ const collections = [
   },
   {
     title: 'Bangles',
-    img: banglesImg,
+    video: banglesVideo,
   },
   {
     title: 'Bridal Collection',
@@ -63,11 +63,24 @@ const Collections = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.8, delay: i * 0.1 }}
             >
-              <div
-                className="h-72 bg-cover bg-center transition-transform duration-700 transform group-hover:scale-105"
-                style={{ backgroundImage: `url(${col.img})` }}
-                aria-label={col.title}
-              ></div>
+              {col.video ? (
+                <video
+                  className="h-72 w-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                  aria-label={`${col.title} collection film`}
+                >
+                  <source src={col.video} type="video/mp4" />
+                </video>
+              ) : (
+                <div
+                  className="h-72 bg-cover bg-center transition-transform duration-700 transform group-hover:scale-105"
+                  style={{ backgroundImage: `url(${col.img})` }}
+                  aria-label={col.title}
+                />
+              )}
               <div className="absolute inset-0 bg-black bg-opacity-50 group-hover:bg-opacity-60 transition" />
               <h3 className="absolute bottom-4 left-4 text-lg md:text-xl font-semibold text-offwhite group-hover:text-gold transition">
                 {col.title}
